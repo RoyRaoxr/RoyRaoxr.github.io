@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Secular One', sans-serif;
+    color: #222222;
+    scroll-behavior: smooth;
+  }
+
+
+  .class-group-item:hover {
+    color: #2693ff;
+  }
+
+  .var-highlight{
+	color: #C0AD60;
+}
+.string-highlight{
+	color: rgba(253, 149, 90, 0.8);
+}
+
+.row {
+  display: flex; /* equal height of the children */
+}
+
+.col {
+  flex: 1; /* additionally, equal width */
+}
+.title {
+  margin-top: 30px;
+}
+
+
+
+
+.everything-else {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+    content:'';
+    display:inline-block;
+    margin-left:3px;
+    background-color:#222222;
+    animation-name:blink;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+  }
+  h1.cursor::after {
+    height:24px;
+    width:13px;
+  }
+  p.cursor::after {
+    height:13px;
+    width:6px;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity:1;
+    }
+    49% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+.hidden {
+    display: none;
+}
+
+.subtitle {
+        
+  font-family: 'Secular One', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  z-index: 20;
+  color: black;
+}
+
+#spec {
+  color : black;
+  text-decoration: none;
+  border-top: 5px solid rgb(0, 255, 239);
+  
+}
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
+@media only screen and (min-width: 888px) {/*tablets and desktop*/
+    .title {
+      font-family: 'Secular One', sans-serif;
+        font-size: 70px;
+        font-weight: 500;
+        z-index: 20;
+        color: #222222;
+        margin-top: 20px;
+      }
+
+    .margin-style-first {
+        margin: 160px 160px 20px 160px;
+    }
+    .margin-style-second {
+        margin: 10px 60px 10px 60px;
+    }
+    .margin-style-third {
+        margin: 10px 140px 30px 140px;
+    }
+}
+    @media screen and (max-device-width: 888px){
+    .margin-style-first {
+        margin: 20px 40px 40px 20px;
+    }
+    .margin-style-second {
+        margin: 30px;
+    }
+
+    .margin-style-third {
+        margin: 10px;
+    }
+}
+
+      
+    
